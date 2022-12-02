@@ -5,7 +5,10 @@ if __name__ == "__main__":
 	if ag <= 1:
 		print("{:d} argument:".format(ag - 1))
 	else:
-		print("{:d} arguments:".format(ag - 1))
+		if ag == 2:
+			print("{:d} argument:".format(ag - 1))
+		else:
+			print("{:d} arguments:".format(ag - 1))
 		for i in range(ag):
 			if i != 0:
 				print("{:d}: {}".format((i), sys.argv[i]))
