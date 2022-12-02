@@ -3,7 +3,7 @@ import sys
 if __name__ == "__main__":
 	ag = len(sys.argv)
 	if ag <= 1:
-		print("{:d} argument:".format(ag - 1))
+		print("{:d} arguments".format(ag - 1))
 	else:
 		if ag == 2:
 			print("{:d} argument:".format(ag - 1))
