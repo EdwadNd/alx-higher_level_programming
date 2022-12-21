@@ -8,7 +8,7 @@ def safe_print_division(a, b):
     """
     try:
         result = a / b
-    except:
+    except BaseException:
         result = None
     finally:
         print("Inside result: {}".format(result))
