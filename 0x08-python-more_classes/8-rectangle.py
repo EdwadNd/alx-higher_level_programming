@@ -22,7 +22,7 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """ Setter the value of width"""
-        if type(value) is not int:
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
@@ -36,7 +36,7 @@ class Rectangle:
     @height.setter
     def height(self, value):
         """ Setter the value of height"""
-        if type(value) is not int:
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
@@ -74,9 +74,9 @@ class Rectangle:
     def bigger_or_equal(rect_1, rect_2):
         """ that returns the biggest rectangle based on the area
             Returns rect_1 if both have the same area value"""
-        if type(rect_1) is not Rectangle:
+        if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
-        if type(rect_2) is not Rectangle:
+        if not isinstance(rect_2, Rectangle):
             raise TypeError("rect_2 must be an instance of Rectangle")
         if rect_1.area() >= rect_2.area():
             return rect_1
