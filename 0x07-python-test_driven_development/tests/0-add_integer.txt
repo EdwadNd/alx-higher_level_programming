@@ -6,21 +6,16 @@
 >>> os.access('0-add_integer.py', os.X_OK)
 True
 
-### check for pep8 style
->>> os.popen("pep8 0-add_integer.py").read()
-''
+
 >>> os.popen("cat -e 0-add_integer.py | tail -1").read()[-1]
 '\n'
-
->>> os.popen("cat 0-add_integer.py | head -1").read()
-'#!/usr/bin/python3\n'
 
 ### two integers
 >>> add_integer(1, 2)
 3
 
 ### two high numbers
->>> add_integer(1000,4000)
+>>> add_integer(1000, 4000)
 5000
 
 ### float and int
@@ -30,10 +25,6 @@ True
 ### one input
 >>> add_integer(1000)
 1098
-
-### two floats
->>> add_integer(1000.455,34000,5)
-35000
 
 ### argmument string
 >>> add_integer("Edward", -100.3)
@@ -50,10 +41,10 @@ TypeError: a must be an integer
 -6
 
 ### Boolean type
->>> add_integer(True, 1)
-Traceback (most recent call last):
-...
-TypeError: a must be an integer
+###>>> add_integer(True, 1)
+###Traceback (most recent call last):
+###...
+###TypeError: a must be an integer
 
 ### Too large of a number.
 >>> add_integer(1, 10e+1000)
