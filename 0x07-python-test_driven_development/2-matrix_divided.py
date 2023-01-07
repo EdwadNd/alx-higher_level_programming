@@ -1,4 +1,3 @@
 #!/usr/bin/python3
 
-def matrix_divided(matrix,div):
-
+def matrix_divided(matrix, div):
