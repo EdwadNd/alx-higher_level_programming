@@ -21,7 +21,7 @@ class Student:
         if attrs is not None:
             my_dict = {}
             for i in attrs:
-                if i in self.__dict__ and type(i) is str:
+                if i in self.__dict__ and isinstance(i, str):
                     my_dict[i] = self.__dict__.get(i)
             return my_dict
         else:
