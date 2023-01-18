@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-""" base class"""
-class base:
-    """ base class inplementation"""
+"""base class"""
+class Base:
+    """base class implimentation"""
+    __nb_objects = 0
     def __init__(self, id=None):
         if id is not None:
-            id = id
+            self.id = id
         else:
-            __nb_objects =+1
-            id = __nb_objects 
+            Base.__nb_objects =+1
+            self.id = Base.__nb_objects
