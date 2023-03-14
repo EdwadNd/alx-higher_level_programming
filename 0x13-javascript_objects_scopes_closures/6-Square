@@ -1,0 +1,8 @@
+#!/usr/bin/node
+const Square_p = require('5-square.js');
+class Square extends Square_p {
+  constructor (s) {
+    super(s, s);
+  }
+}
+module.exports
