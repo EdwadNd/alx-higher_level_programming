@@ -1,2 +1,0 @@
--- lists databases
-SHOW DATABASES;
