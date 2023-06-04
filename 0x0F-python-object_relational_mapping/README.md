@@ -1,3 +1,0 @@
-# Python - Object-relational mapping
-
-
