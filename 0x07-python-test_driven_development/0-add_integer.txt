@@ -1,5 +1,0 @@
->>> add_integer = __import__('0-add_integer').add_ineger
----- Check that the file is executable ---
->>> import os
->>> os.access('0-add_integer.py', os.X_0k)
-True
